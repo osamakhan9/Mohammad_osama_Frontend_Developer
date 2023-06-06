@@ -1,0 +1,83 @@
+.box {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 95%;
+    margin: auto;
+   
+  }
+  .box > div {
+    border: 1px solid rgb(226, 225, 224);
+    border-radius: 10px;
+    height: 500px;
+    
+  }
+  .filters {
+    display: flex;
+    justify-content: space-around;
+    height: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .filters > select {
+    width: 300px;
+    font-size: 20px;
+    border-radius: 5px;
+  } 
+  .paginationButton{
+    padding: 15px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+  }
+  
+  
+ 
+  @media all and (min-width: 381px) and (max-width: 700px) {
+    .box {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+  
+      gap: 20px;
+      width: 95%;
+      margin: auto;
+    }
+    .filters {
+      display: flex;
+  
+      justify-content: space-around;
+      height: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    .filters > select {
+      background-color: #2a2b2c;
+      color: white;
+      width: 200px;
+      font-size: 20px;
+      border-radius: 5px;
+      border: 1px solid greenyellow;
+    }
+  }
+  
+  /* small */
+  @media all and (min-width: 50px) and (max-width: 380px) {
+    .box {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+  
+      gap: 20px;
+      width: 95%;
+      margin: auto;
+    }
+    .filters {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 50px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
